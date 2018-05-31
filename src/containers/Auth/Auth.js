@@ -151,7 +151,7 @@ class Auth extends Component{
         return (
             <div className={classes.Auth}>
                 {authRedirect}
-                <h1>Please Do Something here...</h1>
+                <h1>Please enter your details to {this.state.isSignup ? 'register' : "log in"}</h1>
                 {errorMessage}
                 <form onSubmit={this.submitHandler}>
                     {form}
